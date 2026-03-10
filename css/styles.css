@@ -1035,7 +1035,7 @@ p {
     }
 
     .hero-section {
-        max-width: 320px;
+        max-width: 100%;
         padding-top: 72px;
         padding-bottom: 72px;
     }
@@ -1200,7 +1200,7 @@ p {
     }
 
     .hero-section {
-        max-width: 768px;
+        max-width: 100%;
         padding-top: 112px;
         padding-bottom: 112px;
     }
@@ -1235,7 +1235,14 @@ p {
     }
 
     .features-card h3 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
         text-align: left;
+    }
+
+    .features-card p {
+        font-weight: 500;
     }
 
     .team-section .container {
@@ -1244,8 +1251,6 @@ p {
 
     .footer .container {
         max-width: 496px;
-        padding-left: 0;
-        padding-right: 0;
     }
 
     .footer {
