@@ -358,7 +358,7 @@ p {
     gap: 24px;
     justify-content: center;
     padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .social-link {
@@ -820,6 +820,10 @@ p {
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8E8F99;
+}
+
+.checkbox-text {
+    display: inline;
 }
 
 .checkbox-custom {
