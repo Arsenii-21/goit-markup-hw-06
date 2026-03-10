@@ -32,6 +32,11 @@
                         <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
+                <button type="button" class="menu-toggle" data-menu-open>
+                    <svg width="24" height="24" aria-label="Menu">
+                        <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <!-- Main-->
@@ -456,6 +461,60 @@
             </div>
         </footer>
 
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-container">
+                <button type="button" class="mobile-menu-close modal-close-btn" data-menu-close>
+                  <svg width="8" height="8" class="modal-close-icon" aria-label="Close menu">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li><a href="./index.html" class="mobile-nav-link active">Studio</a></li>
+                        <li><a href="" class="mobile-nav-link">Portfolio</a></li>
+                        <li><a href="" class="mobile-nav-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-contacts">
+                    <ul class="mobile-contacts-list">
+                        <li><a href="tel:+110001111111" class="mobile-contacts-phone">+11 (000) 111-11-11</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="mobile-contacts-email">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-social-icons">
+                      <li>
+                        <a href="#" class="mobile-social-link">
+                          <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram2"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="mobile-social-link">
+                          <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter1"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="mobile-social-link">
+                          <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook1"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="mobile-social-link">
+                          <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin1"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <!-- Modal -->
         <div class="modal-overlay">
             <div class="modal">
@@ -515,7 +574,11 @@
         <script>
             const modal = document.querySelector('.modal-overlay');
             const openBtn = document.querySelector('[data-modal-open]');
-            const closeBtn = document.querySelector('.modal-close-btn');
+          const closeBtn = document.querySelector('.modal .modal-close-btn');
+            
+            const mobileMenu = document.querySelector('[data-menu]');
+            const menuToggle = document.querySelector('[data-menu-open]');
+            const menuClose = document.querySelector('[data-menu-close]');
 
             openBtn.addEventListener('click', function() {
                 modal.classList.add('is-open');
@@ -523,6 +586,22 @@
 
             closeBtn.addEventListener('click', function() {
                 modal.classList.remove('is-open');
+            });
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.add('is-open');
+            });
+
+            menuClose.addEventListener('click', function() {
+                mobileMenu.classList.remove('is-open');
+            });
+
+            // Close menu when clicking on a navigation link
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('is-open');
+                });
             });
         </script>
     </body>
