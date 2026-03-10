@@ -1112,6 +1112,10 @@ p {
         text-align: center;
     }
 
+    .footer-text {
+        text-align: left;
+    }
+
     .footer-social-icons {
         justify-content: center;
     }
@@ -1128,10 +1132,10 @@ p {
     }
 
     .modal {
-        width: calc(100% - 32px);
-        max-width: 288px;
+        width: 288px;
         min-height: 584px;
         max-height: calc(100vh - 16px);
+        padding: 72px 16px 24px 16px;
     }
 
     .modal-form,
@@ -1218,6 +1222,15 @@ p {
 
     .features-item {
         width: calc((100% - 24px) / 2);
+    }
+
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .features-icon {
+        display: none;
     }
 
     .features-card h3 {
