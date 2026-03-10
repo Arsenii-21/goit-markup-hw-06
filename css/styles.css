@@ -1196,6 +1196,7 @@ p {
         padding: 0;
         font-size: 12px;
         line-height: 1.17;
+        letter-spacing: 0.04em;
     }
 
     .hero-section {
@@ -1240,10 +1241,6 @@ p {
     .team-section .container,
     .footer .container {
         max-width: 584px;
-    }
-
-    .footer {
-        padding: 100px 0;
     }
 
     .team-list {
