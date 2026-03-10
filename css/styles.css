@@ -6,7 +6,7 @@
 .header-container {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 0;
 }
 
 .nav {
@@ -1043,7 +1043,7 @@ p {
         justify-content: center;
     }
 
-    .section {
+    .section:not(.hero-section) {
         padding-top: 96px;
         padding-bottom: 96px;
     }
@@ -1239,7 +1239,7 @@ p {
         width: calc((100% - 24px) / 2);
     }
 
-    .section {
+    .section:not(.hero-section) {
         padding-top: 96px;
         padding-bottom: 96px;
     }
@@ -1365,7 +1365,7 @@ p {
         margin-top: 48px;
     }
 
-    .section {
+    .section:not(.hero-section) {
         padding-top: 120px;
         padding-bottom: 120px;
     }
