@@ -1343,6 +1343,10 @@ p {
         padding-right: 15px;
     }
 
+    .footer {
+        padding: 100px 0;
+    }
+
     .nav {
         margin-left: 76px;
     }
