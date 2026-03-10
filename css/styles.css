@@ -480,7 +480,7 @@ p {
 
 .footer-content {
     width: 264px;
-    margin-right: 120px;
+    margin-right: 0;
 }
 
 .footer .container {
@@ -546,7 +546,7 @@ p {
 
 /* Footer Subscribe Form */
 .footer-subscribe {
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .footer-subscribe-title {
@@ -1238,9 +1238,18 @@ p {
         text-align: left;
     }
 
-    .team-section .container,
-    .footer .container {
+    .team-section .container {
         max-width: 584px;
+    }
+
+    .footer .container {
+        max-width: 496px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer {
+        padding: 96px 0;
     }
 
     .team-list {
