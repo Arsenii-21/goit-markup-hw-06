@@ -1225,8 +1225,8 @@ p {
     }
 
     .section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .features-icon {
@@ -1240,6 +1240,10 @@ p {
     .team-section .container,
     .footer .container {
         max-width: 584px;
+    }
+
+    .footer {
+        padding: 100px 0;
     }
 
     .team-list {
