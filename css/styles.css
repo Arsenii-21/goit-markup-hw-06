@@ -963,7 +963,7 @@ p {
 
 .mobile-contacts-phone {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #4D5AE5;
@@ -1154,7 +1154,7 @@ p {
     }
 
     .mobile-contacts-phone {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .mobile-contacts-email {
